@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spam Detector</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+
+	<header>
+		<div class="container">
+		    <h2>Interest Rate Predictor</h2>
+	    </div>
+	</header>
+        <div class="container">
+            <img src="https://media.giphy.com/media/xT39DkL2ZGZHA0Qr1S/giphy.gif"/>
+
+            <form action="/rate" method="POST" class="form">
+                <div class="fieldset">
+                    <label>Enter Your loan amount</label>
+                    <input class="loan_amount" name="loan_amount"/>
+                </div>
+                <div class="fieldset">
+                    <label>Housing (1-4)</label>
+                    <select class="Housing", name="housing_status">
+                        <option value="1"> Mortgage</option>
+                        <option value="2">Rent</option>
+                        <option value="3">Own</option>
+                        <option value="4">Any</option>
+                    </select>
+                </div>
+                <div class="fieldset">
+                    <label>Enter Your Annual Income</label>
+                    <input class="annual_income" name="annual_income"/>
+                </div>
+                <div class="fieldset">
+                    <label>Enter Average Credit Score</label>
+                    <input class="average_credit_score" name="avg_credit_score"/>
+                </div>
+                <div class="fieldset">
+                    <label>Enter loan_terms(months)</label>
+                    <input class="loan_terms" name="loan_terms"/>
+                </div>
+
+                </div>
+
+
+                <input type="submit" class="button" value="predict">
+            </form>
+        </div>
+    </body>
+</html>
