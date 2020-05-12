@@ -13,3 +13,7 @@ The information needed is:
 - loan terms ( 12, 24, 36 month repayment plan)
 
 
+# PROCESS
+We obtained our data from Lending Club, used AWS (Amazon Web Services) to store all the data, and used Google Colab as our notebook for data wrangling. Some of the tools used were Pandas and Pyspark to clean the data and store into dataframes, as well as data conversion, dropping null values and getting rid of any null values or any inconsistant data.
+
+The next step was teh feature engineering process, in which we had to xtract and store our features into a new dataframe. This new dataframe made it much more easy to just focus on the data that was relevant so that we can start building our models. Once we built our models, we had to test and check for accuracy. After comparing models for best accuracy, we then deployedthe final product using Flask app and ran it in our local server.
